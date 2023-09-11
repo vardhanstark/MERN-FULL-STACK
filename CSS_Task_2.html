@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS TASK 2</title>
+    <style>
+      .horizontal_nav {
+        border: 1px solid black;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        padding-right: 0px;
+        overflow: hidden;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .inner_container1 {
+        background-color: #d3d3d3;
+        width: 100%;
+      }
+
+      #horizontal {
+        text-align: center;
+      }
+
+      #java1,
+      #html1,
+      #css1 {
+        float: left;
+        background-color: transparent;
+        color: blue;
+        padding: 10px;
+        border-left: 1px solid blue;
+      }
+
+      #home1 {
+        float: left;
+        background-color: transparent;
+        color: blue;
+        padding: 10px;
+      }
+
+      #css1 {
+        border-right: 1px solid blue;
+      }
+
+      #home1:hover,
+      #java1:hover,
+      #html1:hover,
+      #css1:hover {
+        background-color: grey;
+        color: white;
+      }
+
+      .vertical_nav {
+        border: 1px solid black;
+        padding: 10px 8px 0px 5px;
+        margin-right: auto;
+        margin-left: 200px;
+        float: left;
+      }
+
+      .inner_container2 {
+        background-color: #add9e6;
+      }
+
+      #vertical {
+        text-align: left;
+        margin-left: 220px;
+      }
+
+      #home2,
+      #java2,
+      #html2,
+      #css2,
+      #bootstrap2 {
+        padding: 10px;
+        color: blue;
+        width: 50%;
+      }
+
+      #home2:hover,
+      #java2:hover,
+      #html2:hover,
+      #css2:hover,
+      #bootstrap2:hover {
+        background-color: orange;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h5 id="vertical">Vertical Navigation Bar</h5>
+    <div class="vertical_nav">
+      <div class="inner_container2">
+        <table>
+          <tr>
+            <td id="home2">Home</td>
+          </tr>
+          <tr>
+            <td id="java2">Java</td>
+          </tr>
+          <tr>
+            <td id="html2">HTML</td>
+          </tr>
+          <tr>
+            <td id="css2">CSS</td>
+          </tr>
+          <tr>
+            <td id="bootstrap2">Bootstrap</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h5 id="horizontal">Horizontal Navigation Bar</h5>
+    <div class="horizontal_nav">
+      <div class="inner_container1">
+        <table>
+          <tr>
+            <td id="home1">Home</td>
+            <td id="java1">Java</td>
+            <td id="html1">HTML</td>
+            <td id="css1">CSS</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
